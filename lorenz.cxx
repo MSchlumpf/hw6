@@ -25,7 +25,7 @@ int main(){
   ofstream out("data.txt");			//opens filestream
   out << tstart << "\t" << x << "\t" << y << "\t" << z << endl;	// writes start values
   
-  for(int i=1; i<(N+1); i++){			// for-loop for N iterations
+  for(int i=1; i<N; i++){			// for-loop for N iterations
     func(k1, para, x, y, z);			// calculate different loops...
     func(k2, para, x+dt/2*k1[0], y+dt/2*k1[1], z+dt/2*k1[2]);
     func(k3, para, x+dt/2*k2[0], y+dt/2*k2[1], z+dt/2*k2[2]);
